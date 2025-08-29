@@ -26,18 +26,20 @@ function PostDetails() {
   if (!character) return <div className="loading">Loading...</div>;
 
   return (
-    <div style={{ padding: 24 }}>
+    <div className="post-details">
+      <div style={{ marginLeft: 24 }}>
+        <h1>{character.name}</h1>
+        <p>Status: {character.status}</p>
+        <p>Species: {character.species}</p>
+        <p>Gender: {character.gender}</p>
+        <p>Origin: {character.origin?.name}</p>
+        <p>Location: {character.location?.name}</p>
+      </div>
       <img
         src={character.image}
         alt={character.name}
         style={{ width: 200, borderRadius: 50 }}
       />
-      <h2>{character.name}</h2>
-      <p>Status: {character.status}</p>
-      <p>Species: {character.species}</p>
-      <p>Gender: {character.gender}</p>
-      <p>Origin: {character.origin?.name}</p>
-      <p>Location: {character.location?.name}</p>
     </div>
   );
 }
