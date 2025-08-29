@@ -16,8 +16,8 @@ function Header() {
             "0px 1px 3px 0px rgba(0,0,0,0.10), 0px 1px 2px 0px rgba(0,0,0,0.06)",
         }}
       >
-        <p style={{ fontSize: "2rem", fontWeight: "500", margin: 0 }}>
-          API Explorer
+        <p style={{ fontSize: "1.5rem", fontWeight: "500", margin: 0 }}>
+          Rick AND Morty API Explorer
         </p>
       </header>
     </>
