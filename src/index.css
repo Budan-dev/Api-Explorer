@@ -15,12 +15,27 @@
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  display: block;
 }
-
+.main {
+  margin-top: 20px;
+}
+.post {
+  background-color: rgb(94, 96, 96);
+  width: 250px;
+  height: 180px;
+  margin: 20px auto;
+  border-radius: 10px;
+  display: block;
+  padding: 10px;
+  align-content: center;
+}
+.post:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
